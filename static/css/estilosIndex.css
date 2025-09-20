@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.pink-button {
+  background-color: #f52ce4;
+}
+
+.pink-button:hover {
+  background-color: #c620bb;
+}
+
+.green-button {
+  background-color: #2ff52c;
+}
+
+.green-button:hover {
+  background-color: #25c822;
+}

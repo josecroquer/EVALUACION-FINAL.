@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Números</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/estilosSuma.css">
+</head>
+<body>
+<div class="container">
+    <h1>Inicio de sesión</h1>
+    <form action="/iniciodesesion" method="POST">
+        <label for="usuario">Ingresa tu nombre</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <br>
+        <label for="password">Ingresa tu contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Verificar</button>
+    </form>
+        {% if mensaje %}
+        {{ mensaje }}
+    {% endif %}
+ </body>
+</html>
